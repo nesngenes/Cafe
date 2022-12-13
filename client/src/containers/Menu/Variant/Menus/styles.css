@@ -1,0 +1,31 @@
+.menus-card {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menu-card {
+    background-color: #C5E1A5;    ;
+    width: 500px;
+    margin: 40px;
+    padding: 10px 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.loading {
+    color: white;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: larger;
+}
+
+
+@media screen and (max-width: 680px) {
+    .menu-card {
+        margin: 10px 10px;
+    }
+}

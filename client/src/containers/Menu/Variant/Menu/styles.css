@@ -1,0 +1,9 @@
+.menuimage {
+    width: 400px;
+}
+
+@media screen and (max-width: 680px) {
+    .menuimage {
+        width: 300px;
+    }
+}

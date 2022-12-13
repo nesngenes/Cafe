@@ -1,0 +1,10 @@
+.location {
+    background-color: black;
+}
+
+@media screen and (max-width: 680px) {
+    .location {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
