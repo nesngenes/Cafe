@@ -28,11 +28,14 @@ app.use('/labuenacafe/user', userRoutes)
 app.use('/labuenacafe/cafes', cafeRoutes)
 
 if(process.env.NODE_ENV === 'production') {
-    app.use(express.static(path.join(__dirname, '/client/build')))
-    app.get('*', (req,res) => {
+    app.use(express.static(path.join(__dirname, './client/build')))
+    app.get('*', function(req,res) {
         res.sendFile(
-            path.resolve(__dirname, 'client', 'build', 'index.html')
-        )
+            path.join(__dirname, './client/build/index.html'),
+            function (err) {
+                res.status(500).send(err);
+            }
+        );
     }) 
 } else {
     app.get('/', (req, res) => {
