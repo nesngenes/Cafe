@@ -10,8 +10,7 @@
   },
   "keywords": [],
   "scripts": {
-    "start": "node index.js",
-    "build": "cd ./client && npm i && npm run build"
+    "start": "node index.js"
   },
   "author": "",
   "license": "ISC",
