@@ -11,7 +11,7 @@
   "keywords": [],
   "scripts": {
     "start": "node index.js",
-    "build": "npm i && cd ./client && npm i && npm run build"
+    "build": "cd ./client && npm i && npm run build"
   },
   "author": "",
   "license": "ISC",
