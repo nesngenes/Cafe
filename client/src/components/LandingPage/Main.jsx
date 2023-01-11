@@ -1,22 +1,28 @@
 import React from 'react';
 
 import './main.css';
+
 import { images } from '../../constants';
 
 
 const Main = () => {
   return (
-    <div className='main-page'>
+    <div className='main-page container'>
+      
       <div className='intro'>
-      <p>Welcome to LaBuena Cafe</p>
-        <img className='accessories' src={images.icons} />
-        <h1>il caffè è amore</h1>
-        <p>Feel the pleasure of LaBuena's high quality coffee! Every sip radiates the spirit of life.</p>
-        <button>Get your Coffee</button>
+        <p className='green-dancing-script'>High Quality Food & Beverages</p>
+        <h1 className='heading'><span className='green'>It's</span> all coming from the fresh ingredients and the art of cooking</h1>
+        <p className='text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Varius sed pharetra dictum neque massa congue</p>
+        <button className='green-button'>See Menu</button>
       </div>
-      <div className='main-image'>
-        <img src={images.main} alt='main' />
+
+      <div className='main-images'>
+        <img className='main-image' src={images.main} alt='' />
+        <img className='main-lime' src={images.lime} alt='' />
+        <img className='main-leaf' src={images.leaf} alt='' />
+        <div className='green-border'></div>
       </div>
+
     </div>
   )
 }

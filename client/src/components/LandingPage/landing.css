@@ -1,0 +1,21 @@
+.landing-page {
+    position: relative;
+}
+
+.landing-page::before {
+    position: absolute;
+    content: '';
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: #333834;
+    background-image: url('../../assets/landinglarge.jpg');
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
+}
+
+.landing-content {
+    position: relative;
+}

@@ -14,6 +14,8 @@ import Auth from './containers/Auth/Auth';
 import Menu from './containers/Menu/Menu';
 import SubMenu from './containers/Menu/SubMenu/SubMenu';
 import Variant from './containers/Menu/Variant/Variant';
+import Aboutus from './containers/AboutUs/Aboutus';
+import AboutUsPage from './containers/AboutUsPage/AboutUsPage';
 
 const App  = () => {
 
@@ -21,13 +23,13 @@ const App  = () => {
 
   return (
     <BrowserRouter>
-      <Navbar />
       <Routes>
         <Route path="/" exact element={<Navigate to="/labuenacafe" />} />
         <Route path="/labuenacafe" exact element={<LandingPage />} />
         <Route path="/labuenacafe/auth" exact element={<Auth  />} />
         <Route path="/labuenacafe/location" exact element={<Location setCurrentId={setCurrentId} />} />
         <Route path="/labuenacafe/contact" exact element={<Contact />} />
+        <Route path="/labuenacafe/about-us" exact element={<AboutUsPage />} />
         <Route path="/labuenacafe/menus" exact element={<Menu />} />
         <Route path="/labuenacafe/menus/sub-menu" exact element={<SubMenu />} />
         <Route path="/labuenacafe/menus/variant" exact element={<Variant setCurrentId={setCurrentId} />}/>

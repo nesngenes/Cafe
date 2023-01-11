@@ -1,0 +1,36 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.navbar { 
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    font-family: var(--font-base);
+    font-size: medium;
+    padding: 3rem 8rem;
+}
+
+.nav-logo {
+    text-decoration: none;
+    color: var(--color-white);
+}
+
+.nav-link {
+    color: var(--color-white);
+    padding-right: 4rem;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.cafe-location {
+    display: flex;
+    align-items: center;
+}
+
+.cafe-location-logo {
+    width: 60px;
+}
+

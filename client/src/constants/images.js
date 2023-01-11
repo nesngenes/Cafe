@@ -1,25 +1,74 @@
-import main from '../assets/main.jpg';
-import coffeeBG from '../assets/coffeeBG.jpg';
-import icons from '../assets/icons.svg';
-import popes from '../assets/popes.svg';
-import cafe from '../assets/cafe.jpg';
-import whitecoffee from '../assets/whitecoffee.svg';
-import blackonblack from '../assets/blackonblack.jpg';
-import beve1 from '../assets/beve1.jpg'
-import beve2 from '../assets/beve2.jpg'
-import pizza from '../assets/pizza.jpg'
+import cafe from '../assets/cafe.png'
+import landing from '../assets/landing.jpg'
+import landinglarge from '../assets/landinglarge.jpg'
+import main from '../assets/main.jpg'
+import lime from '../assets/lime.png'
+import leaf from '../assets/leaf.png'
+import check from '../assets/check.png'
+import garden from '../assets/garden.jpg'
+import latte from '../assets/latte.jpg'
 import bakery from '../assets/bakery.jpg'
+import pizza from '../assets/pizza.jpg'
+import drinks from '../assets/drinks.jpg'
+import japanesePattern from '../assets/japanesePattern.png'
+import flower_three from '../assets/flower-three.png'
+import flower_one from '../assets/flower-one.png'
+import welcome from '../assets/welcome.jpg'
+import chef from '../assets/chef.png'
+import dish from '../assets/dish.png'
+import restaurant from '../assets/restaurant.png'
+import wifi from '../assets/wifi.png'
+import kevin from '../assets/kevin.jpg'
+import daniel from '../assets/daniel.jpg'
+import sergei from '../assets/sergei.jpg'
+import red from '../assets/red.jpg'
+import clock from '../assets/clockkk.png'
+import twitter from '../assets/twitter.png'
+import insta from '../assets/insta.png'
+import facebook from '../assets/facebook.png'
+import divider from '../assets/divider.png'
+import menubg from '../assets/menubg.jpg'
+import pancake from '../assets/pancake.jpg'
+import lattee from '../assets/lattee.jpg'
+import brewed from '../assets/brewed.jpg'
+import others from '../assets/others.jpg'
+import blended from '../assets/blended.jpg'
+
 
 export default {
-  main,
-  coffeeBG,
-  icons,
-  popes,
   cafe,
-  whitecoffee,
-  blackonblack,
-  beve1,
-  beve2,
+  landing,
+  landinglarge,
+  main,
+  lime,
+  leaf,
+  check,
+  garden,
+  latte,
+  bakery,
   pizza,
-  bakery
+  drinks,
+  japanesePattern,
+  flower_three,
+  flower_one,
+  welcome,
+  chef,
+  restaurant,
+  dish,
+  wifi,
+  sergei,
+  daniel,
+  kevin,
+  red,
+  clock,
+  twitter,
+  insta,
+  facebook,
+  divider,
+  menubg,
+  pancake,
+  lattee,
+  brewed,
+  blended,
+  others
 }

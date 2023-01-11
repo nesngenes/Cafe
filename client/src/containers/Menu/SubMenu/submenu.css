@@ -1,0 +1,159 @@
+.sub-menu-page {
+    background-color: black;
+    height: 100vh;
+}
+
+.beverages-sub-menu h1, .food-sub-menu h1 {
+    font-family: var(--font-subHeading);
+    color: white;
+    margin-bottom: 2rem;
+}
+
+.sub-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    text-decoration: none;
+    overflow: hidden;
+}
+
+.beverages-links {
+    display: flex;
+}
+
+.beverages-links > * {
+    width: 400px;
+    height: 300px;
+    margin-top: 2rem;
+    margin-right: 4rem;
+}
+
+.sub-menu p {
+    position: relative;
+}
+
+.espresso {
+    position: relative;
+}
+
+.espresso::before {
+    position: absolute;
+    content: '';
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: #748577;
+    background-image: url('../../../assets/lattee.jpg');
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
+}
+
+.brewed {
+    position: relative;
+}
+
+.brewed::before {
+    position: absolute;
+    content: '';
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: #748577;
+    background-image: url('../../../assets/brewed.jpg');
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
+}
+
+
+.blended {
+    position: relative;
+}
+
+.blended::before {
+    position: absolute;
+    content: '';
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: #748577;
+    background-image: url('../../../assets/blended.jpg');
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
+}
+
+.others {
+    position: relative;
+}
+
+.others::before {
+    position: absolute;
+    content: '';
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: #748577;
+    background-image: url('../../../assets/others.jpg');
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
+}
+
+.food-links {
+    display: flex;
+}
+
+.food-links > * {
+    width: 400px;
+    height: 300px;
+    margin-top: 2rem;
+    margin-right: 4rem;
+}
+
+.core {
+    position: relative;
+}
+
+.core::before {
+    position: absolute;
+    content: '';
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: #748577;
+    background-image: url('../../../assets/core.jpg');
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
+}
+
+
+
+.reserve {
+    position: relative;
+}
+
+.reserve::before {
+    position: absolute;
+    content: '';
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: #748577;
+    background-image: url('../../../assets/bakery.jpg');
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
+}
+
+
+

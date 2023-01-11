@@ -16,7 +16,7 @@ const Input = ({name, handleChange, placeholder, type, handleShowPassword, autoF
 
         {name === 'password' &&
             (
-            <button onClick={handleShowPassword}>{type === 'password' ? 
+            <button className='show-pswd' onClick={handleShowPassword}>{type === 'password' ? 
             <MdOutlineVisibility /> : <MdOutlineVisibilityOff />}
             </button>)
         }

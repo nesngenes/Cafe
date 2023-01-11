@@ -1,0 +1,15 @@
+.welcome {
+    background-color: var(--color-black);
+}
+
+.welcome-content {
+    display: flex;
+    align-items: center;
+    margin: 5rem 0;
+}
+
+
+.welcome-content img {
+    height: 1000px;
+    margin-right: 10rem;
+}

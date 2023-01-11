@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.about-us {
+  background-color: var(--color-black);
+  display: flex;
+  align-items: center;
+}
+
+.text {
+  width: 80%;
+}
+
+.list-check {
+  display: flex;
+  align-items: flex-start;
+}
+
+.list-check p {
+  margin-left: 1rem;
+}
+
+.garden-image {
+  width: 750px;
+  height: 450px;
+}
+
+.about-us-content {
+  width: 60%;
+}

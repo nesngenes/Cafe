@@ -1,0 +1,26 @@
+.menus-card {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menu-card {
+    background-color: #C5E1A5;
+    margin-right: 4rem;
+    margin-bottom: 4rem;    ;
+    padding: 10px 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+}
+
+.loading {
+    color: white;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: larger;
+}
+

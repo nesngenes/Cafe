@@ -1,3 +1,7 @@
+.location-page {
+    background-color: black;
+}
+
 .location {
     background-color: black;
 }
@@ -8,3 +12,4 @@
         flex-direction: column-reverse;
     }
 }
+

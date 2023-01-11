@@ -1,41 +1,4 @@
-.project {
-    background-color: rgb(210, 255, 192);
-    padding: 20px;
-    height: 100vh;
-}
-
-.project p {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    font-size: large;
-    margin: 40px;
-}
-
 .contact {
-    background-color: rgb(210, 255, 192);
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-    height: 200px;
-}
-
-.acc {
-    display: flex;
-}
-
-.acc > * {
-    margin: 20px;
-    padding: 10px 20px;
-    background-color: rgb(127, 207, 127);
-    font-weight: bolder;
-    font-size: large;
-    color: black;
-}
-
-@media screen and (max-width: 680px) {
-    .project {
-        height: 100%;
-    }
+    background-color: black;
+    height: 100vh;
 }

@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Dangrek&family=Inter:wght@200;300;400;500;600&display=swap');
+
+
+:root {
+    --font-base: 'Inter', sans-serif;
+    --font-subHeading: 'Dancing Script', cursive;
+    --font-menu: 'Dangrek', cursive;
+
+    --color-limeGreen: #5EDC1F;
+    --color-black: #000000;
+    --color-white: #FFFFFF;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+.green {
+    color: var(--color-limeGreen);
+}
+
+.green-dancing-script {
+    font-family: var(--font-subHeading);
+    color: var(--color-limeGreen);
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.heading {
+    font-family: var(--font-base);
+    font-size: 3rem;
+    color: white;
+    width: 60%;
+    margin-bottom: 2rem;
+}
+
+p {
+    color: white;
+    margin-bottom: 2rem;
+    font-family: var(--font-base);
+}
+
+.green-button {
+    padding: 15px 40px;
+    border-radius: 25px;
+    background-color: var(--color-limeGreen);
+    color: var(--color-white);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.container {
+    padding: 3rem 8rem;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}

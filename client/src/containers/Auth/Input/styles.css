@@ -6,3 +6,9 @@
 .input-and-button > * {
     margin-right: 10px;
 }
+
+
+.show-pswd {
+    background-color: var(--color-white);
+    border: none;
+}

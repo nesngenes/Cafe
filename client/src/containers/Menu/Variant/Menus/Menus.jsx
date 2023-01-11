@@ -1,7 +1,8 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
+import Navbar from '../../../../components/Navbar/Navbar';
 import Menu from '../Menu/Menu';
-import './styles.css'
+import './menus.css'
 
 const Menus = ({setCurrentId}) => {
   const {menus, isLoading} = useSelector((state) => state.menus);
@@ -10,12 +11,15 @@ const Menus = ({setCurrentId}) => {
   
   return (
     isLoading ?<p className='loading'>Loading ... </p> : (
-      <div className='menus-card'>
-        {menus.map((menu) => (
-          <div className='menu-card'>
-            <Menu menu={menu} setCurrentId={setCurrentId} />
-          </div>
-        ))}
+      <div>
+        <Navbar />
+        <div className='menus-card container'>
+          {menus.map((menu) => (
+            <div className='menu-card'>
+              <Menu menu={menu} setCurrentId={setCurrentId} />
+            </div>
+          ))}
+        </div>
       </div>
     )
   )

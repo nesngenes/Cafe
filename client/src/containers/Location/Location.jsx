@@ -6,6 +6,7 @@ import { useSelector, useDispatch } from 'react-redux'
 import {useLocation} from 'react-router-dom'
 import { getCafes } from '../../actions/cafes'
 import Cafe from '../Cafe/Cafe'
+import Navbar from '../../components/Navbar/Navbar'
 
 const Location = ({setCurrentId}) => {
 
@@ -21,9 +22,12 @@ const Location = ({setCurrentId}) => {
 
   return (
     isLoading ? <p>Loading ... </p> : (
-      <div className='location'>
-        <Map cafes={cafes} setCurrentId={setCurrentId} />
-        <Cafe cafes={cafes}/>
+      <div className='location-page'>
+        <Navbar />
+        <div className='location'>
+          <Map cafes={cafes} setCurrentId={setCurrentId} />
+          <Cafe cafes={cafes}/>
+        </div>
       </div>
     )
   )
