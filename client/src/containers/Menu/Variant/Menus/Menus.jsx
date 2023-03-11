@@ -11,8 +11,8 @@ const Menus = ({setCurrentId}) => {
   
   return (
     isLoading ?<p className='loading'>Loading ... </p> : (
-      <div>
-        <Navbar />
+      <div className='menus-page'>
+        <Navbar className='navbar' />
         <div className='menus-card container'>
           {menus.map((menu) => (
             <div className='menu-card'>

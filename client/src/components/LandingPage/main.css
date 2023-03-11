@@ -49,3 +49,42 @@
   width: 407px;
   z-index: 1;
 }
+
+@media (max-width: 40em) {
+  .container {
+    padding: 6rem 4rem;
+  }
+
+ .main-leaf, .main-lime, .green-border, .main-image {
+  display: none;
+ }   
+
+ .main-page-button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+ }
+
+.green-dancing-script {
+  width: 100%;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.heading {
+  font-size: 1.5rem;
+  width: 100%;
+  text-align: center;
+}
+
+ .text {
+  width: 100%;
+  margin-inline: auto;
+  text-align: center;
+  font-size: 0.8rem;
+ }
+
+ .green-button {
+  border: none;
+ }
+}

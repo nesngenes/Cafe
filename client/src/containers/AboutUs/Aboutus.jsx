@@ -13,6 +13,7 @@ const Aboutus = () => {
 
       <div className='about-us-content'>
         <p className='green-dancing-script'>About us</p>
+        <img src={images.leafAboutUs} className='leaf-icon' alt="" />
         <h1 className='heading'><span className='green'>We </span> have our own garden to produce fresh and high quality ingredients</h1>
         <p className='text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque diam pellentesque bibendum non dui volutpat fringilla bibendum. Urna, elit augue urna, vitae feugiat pretium donec id elementum. Ultrices mattis sed vitae mus risus. Lacus nisi, et ac dapibus sit eu velit in consequat.</p>
         
@@ -26,8 +27,10 @@ const Aboutus = () => {
 
         <button className='green-button'>See Menu</button>
       </div>
-
-      <img className='garden-image' src={images.garden}/>
+      
+      <div className='garden-image'>
+        <img src={images.garden}/>
+      </div>
 
     </div>
   )

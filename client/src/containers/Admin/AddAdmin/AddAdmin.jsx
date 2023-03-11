@@ -7,6 +7,7 @@ import {useDispatch} from 'react-redux'
 import { useNavigate } from 'react-router-dom'
 import {signup} from '../../../actions/auth'
 import { render } from 'react-dom';
+import Navbar from '../../../components/Navbar/Navbar'
 
 
 const initialState = {firstname: '', lastname: '', email: '', password: '', confirmPassword: '', role: 'admin'}
@@ -29,6 +30,7 @@ const AddAdmin = () => {
 
   return (
     <form onSubmit={handleSubmit} className='add-admin-form'>
+      <Navbar />
       <h5>Register Admin</h5>
 
       <Input name='firstname' autoFocus placeholder='First Name' handleChange={handleChange} half />

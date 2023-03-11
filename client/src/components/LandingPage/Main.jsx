@@ -13,7 +13,9 @@ const Main = () => {
         <p className='green-dancing-script'>High Quality Food & Beverages</p>
         <h1 className='heading'><span className='green'>It's</span> all coming from the fresh ingredients and the art of cooking</h1>
         <p className='text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Varius sed pharetra dictum neque massa congue</p>
-        <button className='green-button'>See Menu</button>
+        <div className='main-page-button'>
+          <button className='green-button'>See Menu</button>
+        </div>
       </div>
 
       <div className='main-images'>

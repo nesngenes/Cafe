@@ -3,6 +3,7 @@ import './styles.css'
 import {useDispatch, useSelector} from 'react-redux'
 import {createMenu, updateMenu} from '../../../actions/menus'
 import FileBase from 'react-file-base64'
+import Navbar from '../../../components/Navbar/Navbar'
 
 
 const AddMenu = ({currentId, setCurrentId}) => {
@@ -31,7 +32,8 @@ const AddMenu = ({currentId, setCurrentId}) => {
   }
 
   return (
-    <>
+    <div className='add-menu-page'>
+      <Navbar />
       <form className='add_menu_form' onSubmit={handleSubmit}>
       <div className='add-menu-container'> 
           <h2>{currentId ? `Edit Menu "${menu.menuName}"` : 'Create Menu'}</h2>
@@ -90,7 +92,7 @@ const AddMenu = ({currentId, setCurrentId}) => {
           <button onClick={clear}>Clear</button>
       </div>
       </form>
-    </>
+    </div>
   )
 }
 

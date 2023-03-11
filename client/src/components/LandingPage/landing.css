@@ -1,5 +1,7 @@
 .landing-page {
     position: relative;
+    max-width: 100%;
+    overflow: hidden;
 }
 
 .landing-page::before {
@@ -19,3 +21,4 @@
 .landing-content {
     position: relative;
 }
+

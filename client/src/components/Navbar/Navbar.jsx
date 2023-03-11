@@ -13,7 +13,7 @@ const Navbar = () => {
   const navigate = useNavigate();
   const location = useLocation();
 
-  const [isMobile, setIsMobile] = useState(false);
+  const [isMobile, setisMobile] = useState(false);
 
   const logout = () => {
     dispatch({type: 'LOGOUT'})
@@ -33,41 +33,46 @@ const Navbar = () => {
   }, [location])
 
   return (
-    <div className='navbar'>
+    <div className={isMobile ? 'mobile-nav' : 'navbar' }>
       <Link className='nav-logo' to="/">
         <div>
           <h1><span className='green'>La</span>Buena</h1>
         </div>
       </Link>
 
-      <div className='nav-content'>
-        <Link className='nav-link' to="/">Home</Link>
-        <Link className='nav-link' to="/labuenacafe/menus">Menu</Link>
-        <Link className='nav-link' to="/labuenacafe/about-us">About</Link>
-        <Link className='nav-link' to="/labuenacafe/contact">Contact</Link>
-        {
-          user?.result.role === 'admin' && (
-            <Link className='nav-link' to="/labuenacafe/admin">Admin</Link>
-            )
-          }
+      <div className= {isMobile ? 'mobile-nav-content' : 'nav-content'}>
 
-      
-        {user?.result ? (
-          <div className='user'>
-            <p>{user?.result.name}</p>
-            <button onClick={logout}>Logout</button> 
-          </div>
-        ) : (
-          <Link className='nav-link' to="/labuenacafe/auth">
-            <a>Sign In / Up</a>
-          </Link>
-        )}
+        <div className={isMobile ? 'mobile-nav-menu-links' : 'nav-menu-links'}>
+          <Link className='nav-link' to="/">Home</Link>
+          <Link className='nav-link' to="/labuenacafe/menus">Menu</Link>
+          <Link className='nav-link' to="/labuenacafe/about-us">About</Link>
+          <Link className='nav-link' to="/labuenacafe/contact">Contact</Link>
+          {
+            user?.result.role === 'admin' && (
+              <Link className='nav-link' to="/labuenacafe/admin">Admin</Link>
+              )
+            }
 
-      </div>
-        <div className='cafe-location'>
-          <img src={images.cafe} alt='cafe-branch' className='cafe-location-logo'/>
-          <Link className='nav-link' to="/labuenacafe/location">Cafe Branch</Link>
+        
+          {user?.result ? (
+            <div className='user'>
+              <p>{user?.result.name}</p>
+              <button className='logout-button' onClick={logout}>Logout</button> 
+            </div>
+          ) : (
+            <Link className='nav-link' to="/labuenacafe/auth">
+              <a>Sign In / Up</a>
+            </Link>
+          )}
+
         </div>
+          <div className= {isMobile ? 'mobile-cafe-location' : 'cafe-location'}>
+            <img src={images.cafe} alt='cafe-branch' className='cafe-location-logo'/>
+            <Link className='nav-link' to="/labuenacafe/location">Cafe Branch</Link>
+          </div>
+      </div>
+
+        <img onClick={() => setisMobile(!isMobile)} className='humberger-menu' src={images.menu2} alt="humberger-menu" />
     </div>
   )
 }

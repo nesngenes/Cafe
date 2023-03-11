@@ -1,4 +1,14 @@
-.variant-page {
-    background-color: black;
-    padding-top: 40px;
+
+.background-menu {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+.menus-page {
+    position: relative;
+    margin: 0;
+    z-index: 10;
+    padding: 0;
 }

@@ -13,3 +13,9 @@
     height: 1000px;
     margin-right: 10rem;
 }
+
+@media (max-width: 40em) {
+    .welcome {
+        display: none;
+    }
+}

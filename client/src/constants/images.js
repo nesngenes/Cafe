@@ -33,6 +33,11 @@ import lattee from '../assets/lattee.jpg'
 import brewed from '../assets/brewed.jpg'
 import others from '../assets/others.jpg'
 import blended from '../assets/blended.jpg'
+import coffeeDARK from '../assets/coffeeDARK.jpg'
+import pizzaDARK from '../assets/pizzaDARK.jpg'
+import menubgDARK from '../assets/menubgDARK.jpg'
+import menu2 from '../assets/menu2.png'
+import leafAboutUs from '../assets/leafAboutUs.png'
 
 
 export default {
@@ -70,5 +75,10 @@ export default {
   lattee,
   brewed,
   blended,
-  others
+  others,
+  coffeeDARK,
+  pizzaDARK,
+  menubgDARK,
+  menu2,
+  leafAboutUs
 }

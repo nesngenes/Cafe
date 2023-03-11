@@ -28,15 +28,16 @@ const Menu = ({menu, setCurrentId}) => {
 
   return (
     <div className='eachmenu'>
-        <h1>{menu.menuName}</h1>
+      <div className='menu-head'>
+        <h1 className='menu-name'>{menu.menuName}</h1>
+        <p>Rp: {menu.price}</p>
+      </div>
         <img className='menuimage' src={menu.selectedFile} />
-        <p>{menu.price}</p>
-        <p>{menu.variant}</p>
         <p>{menu.description}</p>
         {user?.result.role === 'admin' && (
           <>
-            <button onClick={handleEdit}>Edit</button>
-            <button onClick={() => dispatch(deleteMenu(menu._id))}>Delete</button>
+            <button className='edit-menu-button' onClick={handleEdit}>Edit</button>
+            <button className='delete-menu-button' onClick={() => dispatch(deleteMenu(menu._id))}>Delete</button>
           </>
         )}
     </div>

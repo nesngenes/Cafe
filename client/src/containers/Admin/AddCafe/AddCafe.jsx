@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react'
 import FileBase from 'react-file-base64'
 import { useDispatch, useSelector } from 'react-redux'
 import {addCafe, updateCafe} from '../../../actions/cafes'
+import Navbar from '../../../components/Navbar/Navbar'
 import './styles.css'
 
 const AddCafe = ({currentId, setCurrentId}) => {
@@ -33,6 +34,7 @@ const AddCafe = ({currentId, setCurrentId}) => {
 
   return (
     <div className='addCafeContainer'>
+      <Navbar />
       <form onSubmit={handleSubmit} className='addCafeForm'>
 
         <h2 className='cafeTitle'>{currentId ? `Edit Cafe "${cafe.cafeName}"` : 'Create new Cafe'}</h2>

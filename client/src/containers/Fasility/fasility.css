@@ -38,3 +38,9 @@
 .fasility-content img {
     margin: 2rem;
 }
+
+@media (max-width: 40em) {
+ .fasility {
+    display: none;
+ }   
+}

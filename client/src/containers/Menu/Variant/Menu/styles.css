@@ -1,9 +1,26 @@
-.menuimage {
-    width: 300px;
+.margin {
+    margin: 0;
+    padding: 0;
 }
 
-@media screen and (max-width: 680px) {
-    .menuimage {
-        width: 300px;
-    }
+.eachmenu {
+    font-family: var(--font-base);
+    padding: 1rem;
+}
+
+.menuimage {
+    height: 200px;
+    margin-bottom: 1rem;
+}
+
+.menu-head {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+}
+
+.menu-name {
+    color: white;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
 }

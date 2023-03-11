@@ -1,16 +1,26 @@
 * {
     padding: 0;
     margin: 0;
+    font-family: var(--font-base);
 }
 
 .navbar { 
     display: flex;
-    width: 100%;
     align-items: center;
-    justify-content: space-between;
-    font-family: var(--font-base);
-    font-size: medium;
+    font-size: medium;  
+    width: 100%;
     padding: 3rem 8rem;
+}
+
+.nav-content {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;   
+}
+
+.nav-menu-links {
+    margin-left: 22%;
 }
 
 .nav-logo {
@@ -32,5 +42,78 @@
 
 .cafe-location-logo {
     width: 60px;
+}
+
+.user {
+    padding: 0;
+    display: flex;
+    align-items: flex-end;
+    background-color: rgb(21, 44, 8);
+}
+
+.logout-button {
+    padding: 4px 6px;
+    background-color: var(--color-limeGreen);
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+}
+
+.user p {
+    margin: 0;
+    padding: 0;
+    margin-right: 2rem;
+}
+
+.humberger-menu {
+    display: none;
+    width: 3rem;
+    cursor: pointer;
+}
+
+.mobile-nav {
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.mobile-nav-content {
+    display: none;
+}
+
+@media (max-width: 40em) {
+ .nav-content, .cafe-location, .cafe-location-logo {
+    display: none;
+ }
+ .navbar {
+    padding: 2rem;
+    justify-content: space-between;
+ }
+ .humberger-menu {
+     display: block;
+}
+ .mobile-nav-content {
+    display: grid;
+    background-color: rgb(157, 132, 117);
+    position: fixed;
+    padding: 1rem;
+    inset: 7rem 1rem auto;
+    border-radius: 0.2rem;
+    text-align: center;
+}
+.mobile-nav-menu-links > * {
+    display: grid;
+    padding: 0;
+    margin-bottom: 1.4rem;
+}
+.mobile-cafe-location > * {
+    display: grid;
+    padding: 0;
+}
+
+.cafe-location-logo {
+    display: none;
+}
 }
 

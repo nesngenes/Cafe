@@ -1,10 +1,13 @@
-.admin {
+.admin-page {
     background-color: black;
-    height: 100vh;
+}
+
+.admin {
     display: flex;
     align-items: center;
     justify-content: space-around;
     flex-wrap: wrap;
+    height: 100vh;
 }
 
 .admin-menu {
