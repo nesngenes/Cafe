@@ -12,3 +12,15 @@
     z-index: 10;
     padding: 0;
 }
+
+@media (max-width: 40em) {
+    .background-menu {
+        display: none;
+    }
+
+    .menus-page {
+        background-color: black;
+        margin: 0;
+        padding: 0;
+    }
+}

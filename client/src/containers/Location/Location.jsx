@@ -25,8 +25,8 @@ const Location = ({setCurrentId}) => {
       <div className='location-page'>
         <Navbar />
         <div className='location'>
-          <Map cafes={cafes} setCurrentId={setCurrentId} />
-          <Cafe cafes={cafes}/>
+          <Map cafes={cafes} setCurrentId={setCurrentId} className="map" />
+          <Cafe cafes={cafes} className="cafes"/>
         </div>
       </div>
     )

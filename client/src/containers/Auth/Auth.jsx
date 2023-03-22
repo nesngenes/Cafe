@@ -75,7 +75,7 @@ const Auth = () => {
       <div className='auth-content container'>
         <div className='image-container'/>
         
-        <img src={images.divider} alt="" />
+        <img src={images.divider} alt="" className='flower-divider' />
 
         <form onSubmit={handleSubmit} className='auth-form'>
           <div className='auth-container'> 

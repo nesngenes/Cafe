@@ -155,5 +155,27 @@
     background-blend-mode: multiply;
 }
 
+@media (max-width: 40em) {
+    .sub-menu-page {
+        height: auto;
+        padding: 0;
+    }
+    
+    .beverages-links, .food-links {
+        flex-wrap: wrap;
+    }
+    
+    .beverages-links > * {
+        width: 126px;
+        height: 126px;
+        margin-top: 2rem;
+        margin-right: 1rem;
+    }
 
-
+    .food-links > * {
+        width: 126px;
+        height: 126px;
+        margin-top: 2rem;
+        margin-right: 1rem;
+    }
+}

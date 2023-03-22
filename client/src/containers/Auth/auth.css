@@ -89,3 +89,30 @@
 .switch-mode  {
     cursor: pointer;
 }
+
+
+@media (max-width: 40em) {
+    .auth-page  {
+        height: auto;
+    }
+    .auth-content {
+        flex-direction: column;
+        height: auto;
+        background: none;
+        box-shadow: none;
+    }
+
+    .image-container {
+        display: none;
+    }
+    
+    .flower-divider {
+        display: none;
+    }
+
+    .auth-form {
+        width: 300px;
+        position: initial;
+        right: 0;
+    }
+}

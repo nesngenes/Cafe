@@ -72,3 +72,26 @@
     background-color: rgb(177, 117, 177);
     box-shadow: 20px 20px 50px rgba(62, 39, 72, 0.5);
 }
+
+@media (max-width: 40em) {
+    .main-menu-page {
+        height: auto;
+    }
+
+    .main-menu-page::before {
+    }
+
+    .two-main-menu {
+        flex-direction: column;
+    }
+
+    .wrapper-menu {
+        position: relative;
+        width: 300px;
+        margin: 2rem 0;
+        height: auto;
+        padding: 1rem;
+        border-radius: 1rem;
+    }
+    
+}

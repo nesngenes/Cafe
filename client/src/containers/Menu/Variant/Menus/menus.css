@@ -1,6 +1,7 @@
 .menus-card {
     display: flex;
     flex-wrap: wrap;
+    padding: 3rem 8rem;
 }
 
 
@@ -31,3 +32,12 @@
     font-size: larger;
 }
 
+@media (max-width: 40em) {
+    .menu-card {
+        margin: 1rem 0;
+    }   
+
+    .menus-card {
+        padding: 1rem;
+    }    
+}

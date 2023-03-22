@@ -13,7 +13,7 @@ const Menus = ({setCurrentId}) => {
     isLoading ?<p className='loading'>Loading ... </p> : (
       <div className='menus-page'>
         <Navbar className='navbar' />
-        <div className='menus-card container'>
+        <div className='menus-card'>
           {menus.map((menu) => (
             <div className='menu-card'>
               <Menu menu={menu} setCurrentId={setCurrentId} />

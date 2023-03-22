@@ -101,7 +101,9 @@
     inset: 7rem 1rem auto;
     border-radius: 0.2rem;
     text-align: center;
+    z-index: 100;
 }
+
 .mobile-nav-menu-links > * {
     display: grid;
     padding: 0;

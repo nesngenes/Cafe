@@ -8,11 +8,13 @@ const Footer = () => {
       <div className='footer container'>
         
         <div className='footer-content'>
-          <h2>About Us.</h2>
-          <p>orporate clients and leisure travelers has
+          <div className='footer-about'>
+            <h2>About Us.</h2>
+            <p>orporate clients and leisure travelers has
             been relying on Groundlink for dependab
             safe, and professional chauffeured car
             service in major cities across World.</p>
+          </div>
           <div className='clock'>
             <div className='clock-img'>
               <img src={images.clock} alt="clock" />

@@ -31,12 +31,16 @@
     cursor: pointer;
 }
 
-@media screen and (max-width: 680px) {
+@media (max-width: 40em) {
+    .admin-page {
+        height: 100vh;
+    }
+
     .admin {
         padding: 0;
         margin: 0;
         padding-top: 100px;
-        height: max-content;
+        height: auto;
     }
 
     .admin-menu {
