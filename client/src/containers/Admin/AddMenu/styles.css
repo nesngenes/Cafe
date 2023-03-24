@@ -5,6 +5,7 @@
     font-family: var(--font-base);
 }
 
+
 .add-menu-container {
     display: flex;
     flex-direction: column;
@@ -20,14 +21,13 @@
     width: 500px;
 }
 
-.add-menu-form {
-    background-color: whitesmoke;
+.add-menu-form input::placeholder {
 }
 
 .add-menu-container input {
     padding: 10px 20px;
     font-size: 16px;
-    color: rgb(0, 0, 0);
+    color: white;
     border: 1px solid var(--color-lightGreen);
     outline: none;
     background-color: transparent;

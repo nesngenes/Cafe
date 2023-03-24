@@ -18,7 +18,7 @@
 .add-admin-form input {
     padding: 10px 20px;
     font-size: 16px;
-    color: rgb(0, 0, 0);
+    color: white;
     margin-bottom: 30px;
     border: 1px solid var(--color-lightGreen);
     background-color: transparent;
